@@ -30,6 +30,7 @@ const TokenAuthenticator = ({ children }) => {
           stytch.oauth.authenticate(token, {
             session_duration_minutes: 60,
           });
+          window.history.pushState({}, '', '/');
         }
       }
     }
